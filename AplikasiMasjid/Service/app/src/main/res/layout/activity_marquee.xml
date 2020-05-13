@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Marquee"
+    android:background="#E0ECEC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:cardBackgroundColor="#0896A4">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:clickable="true"
+                        android:id="@+id/backMarq"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:cardBackgroundColor="#E0ECEC"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginBottom="20dp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_arrow_back_black_24dphijau"
+                            android:layout_gravity="center"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/isi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22dp"
+                        android:gravity="center"
+                        android:textColor="#E0ECEC"
+                        android:text="text"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="377dp"
+                android:layout_height="440dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="50dp"
+                android:layout_marginTop="-60dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="30dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="30dp"
+                        android:text="Form Edit Marquee"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginBottom="35dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marquee   :"
+                        android:textSize="25dp"
+                        android:textColor="#0896A4"/>
+                    <EditText
+                        android:id="@+id/txtMarquee"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:text=""
+                        android:hint="Ubah Isi Marquee"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="#0896A4"/>
+
+                    <Button
+                        android:id="@+id/btnSimpanMarquee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EDIT"
+                        android:layout_marginTop="15dp"
+                        android:textColor="#ffffff"
+                        android:background="#0896A4"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
